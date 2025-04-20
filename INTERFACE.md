@@ -18,7 +18,7 @@ The scripts are listed below:
 
 ## set-hostname.sh
 
-This changes the hostname of a VM. It is invoked when a new node is added to a kutti cluster.
+This changes the hostname of a VM, and also changes its unique machine id. It is invoked when a new node is added to a kutti cluster.
 
 ## capture-ca-certificates.sh
 

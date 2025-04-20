@@ -1,14 +1,14 @@
-# driver-vbox-images
+# driver-vbox-arm64-images
 
-VM images for the kutti Oracle VirtualBox driver
+arm64 VM images for the kutti Oracle VirtualBox driver. Currently, the only arm64 platform supported by VirtualBox (v7.1 onwards) is MacOS on Apple silcon.
 
-![GitHub release (latest by date)](https://img.shields.io/github/v/release/kuttiproject/driver-vbox-images?include_prereleases)
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/kuttiproject/driver-vbox-arm64-images?include_prereleases)
 
-This repository contains build instructions and Packer scripts for building images for the kutti VirtualBox driver. For now, its releases are the download source of these images for the kutti system.
+This repository contains build instructions and Packer scripts for building images for the kutti VirtualBox driver, when used with Apple silicon Macs. Its releases are the download source of these images for the kutti system.
 
 ## Image Kubernetes Versions
 
-We will try and maintain images for the current Kubernetes version, and two earlier minor versions. Versions older than that will be deprecated, but not removed. In time, there will be a strategy for image removal.
+We will try and maintain images for the current Kubernetes version, and two earlier minor versions. Versions older than that will be deprecated, and eventually removed.
 
 ## Building Images
 

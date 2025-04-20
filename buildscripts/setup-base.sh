@@ -21,7 +21,7 @@ echo "Done."
 echo "Building guest additions..."
 mount -r /media/cdrom
 BUILDERR=0
-sh /media/cdrom/VBoxLinuxAdditions.run --nox11|| BUILDERR=$? 
+sh /media/cdrom/VBoxLinuxAdditions-arm64.run --nox11|| BUILDERR=$? 
 if [ "$BUILDERR" != "2" ] && [ "$BUILDERR" != "0" ]; then
     echo 2>&1 "Error while building guest additions: code $BUILDERR"
     exit $BUILDERR
