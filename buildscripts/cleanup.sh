@@ -15,7 +15,10 @@ echo "Removing unneeded software..."
 ##   dkms build-essential linux-headers-$(uname -r)
 ##   vim-tiny 
 ##   installation-report
+##   perl
 apt-get purge -y dkms build-essential linux-headers-$(uname -r) vim-tiny installation-report perl
+## We apparently need make for vbox guest service to start on arm64
+apt-get install -y make
 echo "Done."
 
 ## The "laptop" tasksel task seems to be autoselected for whatever reason.
