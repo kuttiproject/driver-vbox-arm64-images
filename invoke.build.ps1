@@ -5,7 +5,7 @@ param(
     $PatchString   = (property PATCH_NUMBER  ""),
     $OSISOPath     = (property OS_ISO_PATH "iso/debian-12.10.0-arm64-netinst.iso"),
     $OSISOChecksum = (property OS_ISO_CHECKSUM "sha256:94d3460a0ea9b43f538af7edfe1c882d5b6ecd1837f3f560379b148d36f59d19"),
-    $KubeVersion   = (property KUBE_VERSION "1.32")
+    $KubeVersion   = (property KUBE_VERSION "1.33")
 )
 
 $VersionString = "$($VersionMajor).$($VersionMinor).$($BuildNumber)$($PatchString)"

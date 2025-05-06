@@ -10,20 +10,21 @@ packer {
 variable "iso-url" {
   # Location of the base debian netinst iso
   type    = string
-  default = "./iso/debian-12.10.0-arm64-netinst.iso"
 }
 
 variable "iso-checksum" {
   # Checksum of the base debian netinst iso
   type    = string
-  default = "sha256:94d3460a0ea9b43f538af7edfe1c882d5b6ecd1837f3f560379b148d36f59d19"
 }
 
 source "virtualbox-iso" "kutti-base" {
   # Before using this script, you need to obtain a debian
   # netinst ISO, and put it in a folder called "iso".
-  # The iso name and its checksum should be updated here.
-  # The last build used debian 10.6.0.
+  # The iso path and its checksum should be passed in via
+  # the variables iso-url and iso-checksum.
+  # E.g.:
+  #   iso-url: ./iso/debian-12.10.0-arm64-netinst.iso
+  #   iso-checksum: sha256:94d3460a0ea9b43f538af7edfe1c882d5b6ecd1837f3f560379b148d36f59d19
   iso_url      = "${var.iso-url}"
   iso_checksum = "${var.iso-checksum}"
 

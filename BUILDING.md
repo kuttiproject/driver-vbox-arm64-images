@@ -45,13 +45,7 @@ The following instructions are for manual building of images. For automated buil
 
 25. Forward the SSH port for the installation VM. Start the VM. Copy the included **attachments/kutti-installscripts** directory  to **/home/kuttiadmin/kutti-installscripts** in the VM using `scp`. Then, copy the included **buildscripts/setup-kubernetes.sh** file to the same directory in the VM. The files should have UNIX line endings after the copy. Verify that, and rectify if needed.
 26. Use SSH to log on to the installation VM as kuttiadmin. Go to the **kutti-installscripts** directory and run `chmod +x *.sh`.
-27. Run `KUBE_VERSION=<version> ./setup-kubernetes.sh` to install kubernetes with containderd. Currently suppported versions are:
-
-* 1.30
-* 1.31
-* 1.32
-
-
+27. Run `KUBE_VERSION=<version> ./setup-kubernetes.sh` to install kubernetes with containderd.
 28. Verify that kubeadm is installed by running `kubeadm`. Verify the kubectl autocomplete works.
 
 ## DHClient configuration (optional)
